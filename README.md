@@ -1,7 +1,7 @@
 # Current fixes
-- Working notification streaming
-- Search does not spawn a new column
-- Hashtags don't spawn a new column
+- ~~Working notification streaming~~ The TweetDeck team broke this again, sorry!
+- ~~Search does not spawn a new column~~ The TweetDeck team broke this again, sorry!
+- ~~Hashtags don't spawn a new column~~ The TweetDeck team broke this again, sorry!
 
 # Tested on
 - Tampermonkey (Chrome)
