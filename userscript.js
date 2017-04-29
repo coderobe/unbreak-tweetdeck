@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Unbreak Tweetdeck
 // @namespace    https://cloaked.systems/
-// @version      0.1
+// @version      0.2
 // @description  fix tweetdeck
 // @author       coderobe <robin@broda.me>
 // @match        https://tweetdeck.twitter.com/
@@ -26,7 +26,14 @@
             console.log("Unbreak Tweetdeck started.");
             // Inject code now
             // Fix Notification streaming (thanks @pixeldesu)
-            TD.controller.stats.setExperiments({config: {tweetdeck_simplified_search_flow_5499: {value: "nope"}}});
+            TD.controller.stats.setExperiments(
+                {
+                    config: {
+                        tweetdeck_simplified_search_flow_5499: {value: "nope"},
+                        tweetdeck_notifications_streaming_5807: { value: "streaming_please" }
+                    }
+                }
+            );
         }
     };
     ubtd_trytimer = setInterval(ubtd_trystart, 10);
