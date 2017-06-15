@@ -2,7 +2,7 @@
 - Working notification streaming
 - Search does not spawn a new column
 - Hashtags don't spawn a new column
-- Revert outlined like button to the filled version
+- Revert icons to their old versions
 - Revert round avatars to squares
 
 # Tested on
