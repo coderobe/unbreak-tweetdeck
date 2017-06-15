@@ -3,6 +3,7 @@
 - Search does not spawn a new column
 - Hashtags don't spawn a new column
 - Revert outlined like button to the filled version
+- Revert round avatars to squares
 
 # Tested on
 - Tampermonkey (Chrome)
