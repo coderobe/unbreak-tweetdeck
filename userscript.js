@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Unbreak Tweetdeck
 // @namespace    https://cloaked.systems/
-// @version      0.2
+// @version      0.3
 // @description  fix tweetdeck
 // @author       coderobe <robin@broda.me>
 // @match        https://tweetdeck.twitter.com/
