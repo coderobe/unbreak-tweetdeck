@@ -19,7 +19,6 @@
     console.log("Unbreak Tweetdeck starting.");
     var ubtd_trystart = null;
     var ubtd_trytimer = null;
-    // tweetdeck startup takes a bit
     ubtd_trystart = function ubtd_trystart() {
         if (findc(document, "js-column")) {
             clearInterval(ubtd_trytimer);
@@ -34,8 +33,18 @@
                     }
                 }
             );
+            // Revert outlined icons
+            var ubtd_fixiconstimer = setInterval(function ubtd_fixicons() {
+                if(findc(document, "icon-favorite")){
+                    $(".icon-favorite").each(function(index, node){
+                        $(node).removeClass("icon-favorite");
+                        $(node).addClass("icon-heart-filled");
+                    });
+                }
+            }, 2);
         }
     };
+    // Tweetdeck startup takes a bit
     ubtd_trytimer = setInterval(ubtd_trystart, 10);
     ubtd_trystart();
 })();
