@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Unbreak Tweetdeck
 // @namespace    https://cloaked.systems/
-// @version      0.5
+// @version      0.5.1
 // @description  fix tweetdeck
 // @author       coderobe <robin@broda.me>
 // @match        https://tweetdeck.twitter.com/
@@ -33,14 +33,15 @@
                 }
             );
             // Revert outlined icons
-            var ubtd_fixiconstimer = setInterval(function ubtd_fixicons() {
+            // DISABLED. reason: not complete (yet)
+            /*var ubtd_fixiconstimer = setInterval(function ubtd_fixicons() {
                 if(findc(document, "icon-favorite")){
                     $(".icon-favorite").each(function(index, node){
                         $(node).removeClass("icon-favorite");
                         $(node).addClass("icon-heart-filled");
                     });
                 }
-            }, 2);
+            }, 2);*/
             // Fix rounded avatars
             function setStyle(cssText, node){
                 if(typeof node == "undefined"){
